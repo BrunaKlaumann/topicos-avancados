@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\42134\\Downloads\\ConFinServer\\ConFinServer\\ConFinServer\\ConFinServer.csproj": {}
+    "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\42134\\Downloads\\ConFinServer\\ConFinServer\\ConFinServer\\ConFinServer.csproj": {
+    "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\42134\\Downloads\\ConFinServer\\ConFinServer\\ConFinServer\\ConFinServer.csproj",
+        "projectUniqueName": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
         "projectName": "ConFinServer",
-        "projectPath": "C:\\Users\\42134\\Downloads\\ConFinServer\\ConFinServer\\ConFinServer\\ConFinServer.csproj",
+        "projectPath": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
         "packagesPath": "C:\\Users\\42134\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\42134\\Downloads\\ConFinServer\\ConFinServer\\ConFinServer\\obj\\",
+        "outputPath": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
