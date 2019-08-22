@@ -20,14 +20,13 @@ namespace ConFinServer.Controllers
                 NpgsqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    //Mais usado está descomentado
-                    // string sigla = dr.GetString(0);
-                    // string nome= dr.GetString(1);
                     int codigo = (int)dr["cid_codigo"];
                     string nome = (string)dr["nome"];
+                    string sigla = (string)dr["est_sigla"];
                     Cidade cidade = new Cidade();
                     cidade.cid_codigo = codigo;
                     cidade.nome = nome;
+                    cidade.est_sigla = sigla;
                     lista.Add(cidade);
 
                 }
@@ -44,10 +43,12 @@ namespace ConFinServer.Controllers
             try
             {
                 NpgsqlConnection conexao = Conexao.GetConexao();
-                string sql = "insert into cidade(cid_codigo,nome) values(@codigo,@nome)";
+                string sql = "insert into cidade(cid_codigo,nome,est_sigla) values(@codigo,@nome,@sigla)";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
                 cmd.Parameters.Add("@codigo", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.cid_codigo;
                 cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.nome;
+                cmd.Parameters.Add("@sigla",NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.est_sigla;
+
                 int valor = cmd.ExecuteNonQuery();
                 if (valor == 1)
                 {
@@ -67,10 +68,11 @@ namespace ConFinServer.Controllers
             try
             {
                 NpgsqlConnection conexao = Conexao.GetConexao();
-                string sql = "update cidade set nome=@nome where cid_codigo = @codigo";
+                string sql = "update cidade set nome=@nome where cid_codigo = @codigo and est_sigla = @sigla";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conexao);
                 cmd.Parameters.Add("@codigo", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.cid_codigo;
                 cmd.Parameters.Add("@nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.nome;
+                cmd.Parameters.Add("@sigla", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.est_sigla;
                 int valor = cmd.ExecuteNonQuery();
                 if (valor == 1)
                 {
