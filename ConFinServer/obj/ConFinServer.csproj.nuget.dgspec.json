@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {}
+    "C:\\Users\\User\\Desktop\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {
+    "C:\\Users\\User\\Desktop\\topicos-avancados\\ConFinServer\\ConFinServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
         "projectName": "ConFinServer",
-        "projectPath": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
-        "packagesPath": "C:\\Users\\42134\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\42134\\Documents\\topicos-avancados\\ConFinServer\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\topicos-avancados\\ConFinServer\\ConFinServer.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\topicos-avancados\\ConFinServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\42134\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
